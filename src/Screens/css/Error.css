@@ -1,0 +1,22 @@
+
+.container {
+    margin: 2rem 8% 2rem 15%;
+  }
+  
+  .image {
+    height: 80%;
+  }
+  
+  .message {
+    color: rgb(53, 53, 53);
+    font-size: .9rem;
+  }
+  
+  .link {
+    color:rgb(174, 76, 67);
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    color:rgb(99, 99, 99);
+  }
