@@ -3,7 +3,7 @@ import './css/About.css'
 const About = (props) => {
     return (
         <div>
-            <img className="img" src="/images/About.png" alt="AboutUs" />
+            <img className="img" src="https://i.ibb.co/D5sXzBS/About.png" alt="AboutUs" />
             <div className="content">
                 <h2 className="title">About Shopee Mart</h2>
                 <h2>Our History</h2>

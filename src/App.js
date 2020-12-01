@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Link } from "react-router-dom";
+import {Switch, Route, Link } from "react-router-dom";
 import './App.css';
 import Home from './Screens/Home';
 import Product from './Screens/Product';
@@ -13,7 +13,7 @@ import About from './Screens/About';
 import Contact from './Screens/Contact';
 import ReturnPolicy from './Screens/ReturnPolicy';
 import Help from './Screens/Help';
-// import Error from "./Screens/Error";
+import Error from "./Screens/Error";
 
 // here is some external content. look at the /baz r  oute below
 // to see how this content is passed down to the components via props
@@ -74,7 +74,7 @@ function App() {
         </ul>
       </aside>
 
-      <switch>
+      <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/product/:id" exact component={Product} />
         <Route exact path="/Foods"><Category category="foods"/> </Route>
@@ -90,8 +90,8 @@ function App() {
         <Route path="/Contact" exact component={Contact} />
         <Route path="/ReturnPolicy" exact component={ReturnPolicy} />
         <Route path="/Help" exact component={Help} />
-        {/* <Route component={Error} /> */}
-      </switch>
+        <Route component={Error} />
+      </Switch>
 
       <footer className="footer">
         <Link to="/About" className="footer-text">About Us</Link>

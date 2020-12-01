@@ -9,7 +9,7 @@ const Home = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       // performs a GET request
-      const response = await fetch("http://demo6790190.mockable.io/shopeemart");
+      const response = await fetch("https://demo6790190.mockable.io/shopeemart");
       const responseJson = await response.json();
       setFetchedData(responseJson);
     };
@@ -22,7 +22,7 @@ const Home = (props) => {
   return isEmpty(fetchedData) ? null : (
     
     <div>
-      <img className="img" src="/images/ads.png" alt="Ads" />
+      <img className="img" src="https://i.ibb.co/K2wFwdB/ads.png" alt="Ads" />
       <ul className="products">
         {
           fetchedData.products.map(product=>

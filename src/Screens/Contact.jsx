@@ -3,7 +3,7 @@ import './css/About.css';
 const Contact = (props) => {
     return (
         <div>
-            <img className="img-contact" src="/images/Contact.png" alt="ContactUs" />
+            <img className="img-contact" src="https://i.ibb.co/LJXJnQC/Contact.png" alt="ContactUs" />
             <div className="content">
                 <h2>Phone:</h2>
                 <p>Phone call at +1 620 616 6610 (Monday to Sunday - 8.00am until 10:00pm) including Public Holidays.</p>
