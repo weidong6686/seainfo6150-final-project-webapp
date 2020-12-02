@@ -55,4 +55,5 @@
     border-radius: 0.5rem;
     cursor: pointer;
     width: auto;
+    max-width: 200%;
   }

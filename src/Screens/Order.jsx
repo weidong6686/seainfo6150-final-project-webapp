@@ -52,9 +52,10 @@ const Order = (props) => {
             <div className="placeorder-action">
                 <ul>
                     <li className="placeorder-actions-payment">
-                    <a href="/OrderConfirm">
+                    {/* <a href="/OrderConfirm">
                         <button className="button">Place the Order</button>
-                    </a>
+                    </a> */}
+                    <Link to="./orderConfirm" className="button secondary text-center">Place the Order</Link>
                     </li>
                     <li>
                         <h3>Order Summary</h3>

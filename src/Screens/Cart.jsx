@@ -45,12 +45,12 @@ const Cart = (props) => {
             <h3>
                 Subtotal ( 1 items) : $ {item.price}
             </h3>
-            
-            <a href="/order">
-                <button className="button primary full-width">
-                    Proceed to Checkout
-                </button>
-            </a>
+            <Link to="./order" className="button secondary text-center">Proceed to Checkout</Link>
+            {/* // <a href="/order">
+            //     <button className="button primary full-width">
+            //         Proceed to Checkout
+            //     </button>
+            // </a> */}
         </div>
 
     </div>
