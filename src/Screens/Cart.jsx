@@ -19,7 +19,7 @@ const Cart = (props) => {
                 </div>
                 <div className="cart-name">
                   <div>
-                    <Link to={"/product/" + item.product}>
+                    <Link to={"/product/" + item._id}>
                       {item.name}
                     </Link>
                   </div>

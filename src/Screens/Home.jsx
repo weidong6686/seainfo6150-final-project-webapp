@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { isEmpty } from "lodash";
 import './css/Home.css';
+import { Link } from "react-router-dom";
 
 const Home = (props) => {
 
@@ -30,7 +31,8 @@ const Home = (props) => {
               <div className="product">
                 <img className="product-image" src={product.image} alt="product" />
                 <div className="product-name">
-                  <a href={'/product/'+product._id}>{product.name}</a>
+                  {/* <a href={'/product/'+product._id}>{product.name}</a> */}
+                  <Link to={'/product/'+product._id} >{product.name}</Link>
                 </div>
                 <div className="product-brand">{product.brand}</div>
                 <div className="product-price">${product.price}</div>
