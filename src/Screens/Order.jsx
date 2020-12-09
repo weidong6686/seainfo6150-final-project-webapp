@@ -55,7 +55,7 @@ const Order = (props) => {
                     {/* <a href="/OrderConfirm">
                         <button className="button">Place the Order</button>
                     </a> */}
-                    <Link to="./orderConfirm" className="button secondary text-center">Place the Order</Link>
+                    <Link to="/orderConfirm" className="button-order">Place the Order</Link>
                     </li>
                     <li>
                         <h3>Order Summary</h3>

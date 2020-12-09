@@ -49,11 +49,12 @@
     text-align: right;
   }
 
-  .button {
+  .button-cart{
     padding: 1rem;
     border: 0.1rem #808080 solid;
     border-radius: 0.5rem;
     cursor: pointer;
-    width: auto;
-    max-width: 200%;
+    background-color: #f0c040;
+    width: 20rem;
+    text-align: center;
   }

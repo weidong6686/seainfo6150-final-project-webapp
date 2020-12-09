@@ -35,6 +35,12 @@
     justify-content: space-between;
     margin-bottom: 1rem;
   }
-  .button {
+  .button-order{
+    padding: 1rem;
+    border: 0.1rem #808080 solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
     background-color: #f0c040;
+    width: 40rem;
+    text-align: center;
   }

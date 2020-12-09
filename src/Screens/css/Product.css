@@ -53,7 +53,17 @@
   }
   .button.primary {
     background-color: #f0c040;
-    width: 100%;
+    /* width: 100%; */
+  }
+
+  .button-addtocart{
+    padding: 1rem;
+    border: 0.1rem #808080 solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #f0c040;
+    max-width: inherit;
+    text-align: center;
   }
 
   .text-center {

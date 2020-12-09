@@ -51,9 +51,7 @@ const Product = (props) => {
                             </select>
                     </li>
                     <li>
-                        <a href="/cart">
-                            <button className="button primary">Add to Cart</button>
-                        </a>
+                        <Link to="/cart" className="button-addtocart">Add to Cart</Link>
                     </li>
                 </ul>
             </div>
