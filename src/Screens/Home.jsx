@@ -31,7 +31,6 @@ const Home = (props) => {
               <div className="product">
                 <img className="product-image" src={product.image} alt="product" />
                 <div className="product-name">
-                  {/* <a href={'/product/'+product._id}>{product.name}</a> */}
                   <Link to={'/product/'+product._id} >{product.name}</Link>
                 </div>
                 <div className="product-brand">{product.brand}</div>

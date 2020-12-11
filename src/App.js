@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, HashRouter } from "react-router-dom";
 import './App.css';
 import Home from './Screens/Home';
 import Product from './Screens/Product';
@@ -14,15 +14,6 @@ import Contact from './Screens/Contact';
 import ReturnPolicy from './Screens/ReturnPolicy';
 import Help from './Screens/Help';
 import Error from "./Screens/Error";
-
-// here is some external content. look at the /baz r  oute below
-// to see how this content is passed down to the components via props
-// const externalContent = {
-//   id: "article-1",
-//   title: "An Article",
-//   author: "April Bingham",
-//   text: "Some text in the article",
-// };
 
 function App() {
 
@@ -42,13 +33,13 @@ function App() {
           <Link to="/">Shopee Mart</Link>
         </div>
         <ul className="filter">
-        <li>
-          <form>
-            <input name="searchKeyword"/>
-            <button type="submit">Search</button>
-          </form>
-        </li>
-      </ul>
+          <li>
+            <form>
+              <input name="searchKeyword" />
+              <button type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
         <div className="header-links">
           <Link to="/Cart">Cart</Link>
           <Link to="/Signin">Sign In</Link>
@@ -74,24 +65,26 @@ function App() {
         </ul>
       </aside>
 
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/product/:id" exact component={Product} />
-        <Route exact path="/Foods"><Category category="foods"/> </Route>
-        <Route exact path="/Clothes"><Category category="clothes"/> </Route>
-        <Route exact path="/Electronics"><Category category="electronics"/> </Route>
-        <Route exact path="/Home"><Category category="home"/> </Route>
-        <Route path="/Cart" exact component={Cart} />
-        <Route path="/Order" exact component={Order} />
-        <Route path="/OrderConfirm" exact component={OrderConfirm} />
-        <Route path="/Signin" exact component={Signin} />
-        <Route path="/Signup" exact component={Signup} />
-        <Route path="/About" exact component={About} />
-        <Route path="/Contact" exact component={Contact} />
-        <Route path="/ReturnPolicy" exact component={ReturnPolicy} />
-        <Route path="/Help" exact component={Help} />
-        <Route component={Error} />
-      </Switch>
+      <HashRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/product/:id" exact component={Product} />
+          <Route exact path="/Foods"><Category category="foods" /> </Route>
+          <Route exact path="/Clothes"><Category category="clothes" /> </Route>
+          <Route exact path="/Electronics"><Category category="electronics" /> </Route>
+          <Route exact path="/Home"><Category category="home" /> </Route>
+          <Route path="/Cart" exact component={Cart} />
+          <Route path="/Order" exact component={Order} />
+          <Route path="/OrderConfirm" exact component={OrderConfirm} />
+          <Route path="/Signin" exact component={Signin} />
+          <Route path="/Signup" exact component={Signup} />
+          <Route path="/About" exact component={About} />
+          <Route path="/Contact" exact component={Contact} />
+          <Route path="/ReturnPolicy" exact component={ReturnPolicy} />
+          <Route path="/Help" exact component={Help} />
+          <Route component={Error} />
+        </Switch>
+      </HashRouter>
 
       <footer className="footer">
         <Link to="/About" className="footer-text">About Us</Link>
