@@ -27,45 +27,45 @@ function App() {
 
   return (
     <div className="grid-container">
-      <header className="header">
-        <div className="brand">
-          <button onClick={openMenu}>&#9776;</button>
-          <Link to="/">Shopee Mart</Link>
-        </div>
-        <ul className="filter">
-          <li>
-            <form>
-              <input name="searchKeyword" />
-              <button type="submit">Search</button>
-            </form>
-          </li>
-        </ul>
-        <div className="header-links">
-          <Link to="/Cart">Cart</Link>
-          <Link to="/Signin">Sign In</Link>
-        </div>
-      </header>
-
-      <aside className="sidebar">
-        <h3>Shopping Categories</h3>
-        <button className="sidebar-close-button" onClick={closeMenu}>x</button>
-        <ul className="categories">
-          <li>
-            <Link to="/Clothes">Clothes</Link>
-          </li>
-          <li>
-            <Link to="/Foods">Foods</Link>
-          </li>
-          <li>
-            <Link to="/Electronics">Electronics</Link>
-          </li>
-          <li>
-            <Link to="/Home">Home</Link>
-          </li>
-        </ul>
-      </aside>
-
       <HashRouter>
+        <header className="header">
+          <div className="brand">
+            <button onClick={openMenu}>&#9776;</button>
+            <Link to="/">Shopee Mart</Link>
+          </div>
+          <ul className="filter">
+            <li>
+              <form>
+                <input name="searchKeyword" />
+                <button type="submit">Search</button>
+              </form>
+            </li>
+          </ul>
+          <div className="header-links">
+            <Link to="/Cart">Cart</Link>
+            <Link to="/Signin">Sign In</Link>
+          </div>
+        </header>
+
+        <aside className="sidebar">
+          <h3>Shopping Categories</h3>
+          <button className="sidebar-close-button" onClick={closeMenu}>x</button>
+          <ul className="categories">
+            <li>
+              <Link to="/Clothes">Clothes</Link>
+            </li>
+            <li>
+              <Link to="/Foods">Foods</Link>
+            </li>
+            <li>
+              <Link to="/Electronics">Electronics</Link>
+            </li>
+            <li>
+              <Link to="/Home">Home</Link>
+            </li>
+          </ul>
+        </aside>
+
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/product/:id" exact component={Product} />
@@ -84,14 +84,15 @@ function App() {
           <Route path="/Help" exact component={Help} />
           <Route component={Error} />
         </Switch>
-      </HashRouter>
 
-      <footer className="footer">
-        <Link to="/About" className="footer-text">About Us</Link>
-        <Link to="/Contact" className="footer-text">Contact Us</Link>
-        <Link to="/ReturnPolicy" className="footer-text">Return Policy</Link>
-        <Link to="/Help" className="footer-text">Help</Link>
-      </footer>
+        <footer className="footer">
+          <Link to="/About" className="footer-text">About Us</Link>
+          <Link to="/Contact" className="footer-text">Contact Us</Link>
+          <Link to="/ReturnPolicy" className="footer-text">Return Policy</Link>
+          <Link to="/Help" className="footer-text">Help</Link>
+        </footer>
+
+      </HashRouter>
     </div>
   );
 }
